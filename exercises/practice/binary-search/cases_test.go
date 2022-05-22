@@ -61,6 +61,13 @@ var testCases = []struct {
 		err:         "value not in array",
 	},
 	{
+		description: "identifies a value by changing search direction",
+		slice:       []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20},
+		key:         17,
+		x:           16,
+		err:         "",
+	},
+	{
 		description: "a value smaller than the array's smallest value is not found",
 		slice:       []int{1, 3, 4, 6, 8, 9, 11},
 		key:         0,
